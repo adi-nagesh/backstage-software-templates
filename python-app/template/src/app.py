@@ -11,7 +11,7 @@ def info():
     return jsonify({
         'time': datetime.datetime.now().strftime("%I:%M:%p on %B %d, %Y"),
         'hostname': socket.gethostname(),
-        'message': 'you are doing great!!!!<3',
+        'message': 'you are doing great!!!i!<3',
         'runner': "self-hosted",
         'deployed': 'kubernetes',
         'env': '${{values.env}}',
