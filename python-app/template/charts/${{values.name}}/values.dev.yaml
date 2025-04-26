@@ -1,0 +1,5 @@
+replicaCount: 1
+image:
+  repository: adinagesh/${{ values.name }}
+  pullPolicy: IfNotPresent
+  tag: ${{ values.name }}-${{values.env}}-latest

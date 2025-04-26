@@ -1,0 +1,10 @@
+replicaCount: 2
+image:
+  repository: adinagesh/${{ values.name }}
+  pullPolicy: IfNotPresent
+  tag: ${{ values.name }}-${{values.env}}-latest
+
+resources:
+  requests:
+    cpu: 60m
+    memory: 60M

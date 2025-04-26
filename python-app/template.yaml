@@ -38,7 +38,7 @@ spec:
         url: ./template
         values:
           name: ${{ parameters.component_id }}
-          owner: ${{ parameters.environment }}
+          env: ${{ parameters.environment }}
 
     # - id: fetch-docs
     #   name: Fetch Docs
