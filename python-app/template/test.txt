@@ -1,2 +1,2 @@
-This is my app,appname = {{ values.name }}
-This is my owner,ownername = {{ values.owner}}
+This is my app,appname = ${{ values.name }}
+This is my owner,ownername = ${{ values.owner}}
