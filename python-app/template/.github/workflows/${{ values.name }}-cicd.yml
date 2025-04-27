@@ -70,7 +70,7 @@ jobs:
       - name: add repo to argocd
         shell: bash
         run: |
-         repo="'https://github.com/adinagesh/${{values.name}}.git"
+         repo="https://github.com/adinagesh/${{values.name}}.git"
          argocd  repo list | grep $repo || argocd repo add $repo
 
          # create the argocd app
