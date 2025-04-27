@@ -76,7 +76,7 @@ jobs:
          # create the argocd app
          argocd app get ${{values.name}} || argocd app create ${{values.name}} \
          --repo https://github.com/nageshadik/${{values.name}} \
-         --path charts/app \
+         --path charts/${{values.name}} \
          --dest-namespace ${{values.name}} \
          --dest-server https://kubernetes.default.svc \
          --values values.${{values.env}}.yaml \
