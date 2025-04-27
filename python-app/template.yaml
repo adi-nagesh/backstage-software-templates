@@ -53,7 +53,7 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: This is ${{ parameters.component_id }}
-        repoUrl: github.com?owner=adi-nagesh&repo=${{ parameters.component_id}}
+        repoUrl: github.com?owner=nageshadik&repo=${{ parameters.component_id}}
         repoVisibility: public
         protectDefaultBranch: false
 
