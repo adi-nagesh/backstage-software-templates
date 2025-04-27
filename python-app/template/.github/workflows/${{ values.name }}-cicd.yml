@@ -70,12 +70,12 @@ jobs:
       - name: add repo to argocd
         shell: bash
         run: |
-         repo="https://github.com/adinagesh/${{values.name}}.git"
+         repo="https://github.com/nageshadik/${{values.name}}.git"
          argocd  repo list | grep $repo || argocd repo add $repo
 
          # create the argocd app
          argocd app get ${{values.name}} || argocd app create ${{values.name}} \
-         --repo https://github.com/adinagesh/${{values.name}} \
+         --repo https://github.com/nageshadik/${{values.name}} \
          --path charts/app \
          --dest-namespace ${{values.name}} \
          --dest-server https://kubernetes.default.svc \
